@@ -10,11 +10,11 @@
   <body>
     <div class="container">
       <h2>Create A Product</h2><br/>
-	@if ($error->any())
+	@if ($errors->any())
 	<div class="alert alert-danger">
 		<ul>
 			@foreach ($errors->all() as $error)
-				<li>{{error}}</li>
+				<li>{{$error}}</li>
 			@endforeach
 		</ul>
 	</div><br />
