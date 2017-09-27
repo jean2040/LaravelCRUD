@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//web.php
+Route::resource('products','ProductController');
